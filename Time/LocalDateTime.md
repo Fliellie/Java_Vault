@@ -53,7 +53,8 @@ Dưới đây là một đoạn code tổng hợp cách sử dụng các hàm tr
 
 Java
 
-```
+```java
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 

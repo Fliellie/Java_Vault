@@ -36,9 +36,8 @@ Mỗi kiểu dữ liệu nguyên thủy trong Java đều có một Lớp Wrappe
 
 Trước Java 5, việc chuyển đổi qua lại giữa kiểu nguyên thủy và Lớp Wrapper rất thủ công và rườm rà:
 
-Java
 
-```
+```java
 // Trước Java 5
 int soNguyenThuy = 5;
 Integer doiTuongSo = Integer.valueOf(soNguyenThuy); // Đóng gói thủ công
@@ -54,9 +53,9 @@ Tuy nhiên, từ Java 5 trở đi, trình biên dịch đã đủ thông minh đ
 
 #### Ví dụ minh họa:
 
-Java
 
-```
+
+```java
 public class Main {
     public static void main(String[] args) {
         // 1. AUTOBOXING (int -> Integer)

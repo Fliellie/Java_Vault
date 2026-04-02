@@ -1,4 +1,4 @@
-Chào bạn! Bạn đi đúng lộ trình chuẩn xác rồi đấy. Khi đã nhận ra sự bất tiện của mảng (Array) với kích thước cố định, **Java Collections Framework (JCF)** chính là "kho vũ khí" tối thượng mà mọi lập trình viên Java đều phải thành thạo.
+ Khi đã nhận ra sự bất tiện của mảng (Array) với kích thước cố định, **Java Collections Framework (JCF)** chính là "kho vũ khí" tối thượng mà mọi lập trình viên Java đều phải thành thạo.
 
 Giao diện `Collection` là gốc rễ của hầu hết các cấu trúc dữ liệu động trong Java (nằm trong gói `java.util`). Nó giúp bạn lưu trữ, thêm, xóa và tìm kiếm dữ liệu một cách linh hoạt mà không cần bận tâm về kích thước ban đầu.
 
@@ -51,6 +51,8 @@ Mô phỏng việc xếp hàng ngoài đời thực.
     - `PriorityQueue`: Hàng đợi ưu tiên. Các phần tử không xếp theo thứ tự thêm vào mà xếp theo "mức độ ưu tiên" (do bạn định nghĩa, ví dụ: khách hàng VIP luôn được đẩy lên đầu hàng).
         
     - `LinkedList`: Bất ngờ chưa? Lớp này vừa triển khai `List`, vừa triển khai `Queue` (cụ thể là `Deque` - hàng đợi hai đầu), nên nó có thể dùng làm hàng đợi rất tốt.
+        ![[Pasted image 20260402074035.png]]
+        
         
 
 ---

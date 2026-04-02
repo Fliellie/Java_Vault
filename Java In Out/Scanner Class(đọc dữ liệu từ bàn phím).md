@@ -31,7 +31,8 @@ Nếu các lớp trước bắt bạn phải hiểu về mảng byte, bộ đệ
 
 Java
 
-```
+```java
+
 import java.util.Scanner;
 
 public class ScannerExample {
@@ -69,9 +70,9 @@ Hầu như 100% người học Java đều từng gãi đầu bứt tai vì lỗ
 
 **Cách khắc phục:** Luôn thêm một lệnh `scanner.nextLine();` "vô nghĩa" ở giữa để nuốt đi ký tự xuống dòng thừa đó.
 
-Java
 
-```
+
+```java
 int age = scanner.nextInt(); 
 scanner.nextLine(); // "Nuốt" ký tự xuống dòng thừa!
 String address = scanner.nextLine(); // Bây giờ mới đọc địa chỉ bình thường

@@ -71,9 +71,9 @@ Dưới đây là bảng phân loại các phương thức "nhẵn mặt" nhất
 
 Dưới đây là một đoạn code tổng hợp cách sử dụng lớp `Math`, đặc biệt là **công thức kinh điển để tạo một số nguyên ngẫu nhiên trong một khoảng (min, max)**:
 
-Java
 
-```
+
+```java
 public class ToanHocVui {
     public static void main(String[] args) {
         
