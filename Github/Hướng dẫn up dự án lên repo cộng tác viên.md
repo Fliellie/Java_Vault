@@ -26,11 +26,8 @@ Bây giờ bạn cứ tự nhiên tạo file mới (ví dụ file `Login.fxml`) 
 
 ### Bước 3: Quy trình "3 bước thần thánh" để đẩy file
 
-Mỗi khi muốn đưa công sức của mình lên GitHub, bạn chạy 3 lệnh này:
-
 **1. Đánh dấu các thay đổi:**
 
-Bash
 
 ```bash
 git add .
@@ -46,8 +43,6 @@ git commit -m "Bạn A thêm giao diện đăng nhập"
 
 **3. Đẩy lên GitHub (Push):**
 
-
-
 ```bash
 git push origin main
 ```
@@ -56,20 +51,8 @@ _(Lưu ý: Nếu nhánh chính của bạn là `master` thì thay `main` bằng 
 
 ---
 
-### ⚠️ Những tình huống "dễ ăn hành" bạn cần nhớ:
 
-#### 1. Bị hỏi Username/Password
-
-Khi gõ `git push`, Terminal sẽ hỏi tài khoản.
-
-- **Username:** Là tên đăng nhập GitHub của bạn.
-    
-- **Password:** **KHÔNG PHẢI** mật khẩu đăng nhập web. Bạn phải dùng **Personal Access Token (PAT)**.
-    
-    - _Cách lấy:_ Vào GitHub $\rightarrow$ Settings $\rightarrow$ Developer Settings $\rightarrow$ Personal Access Tokens $\rightarrow$ Generate new token. Copy mã đó và dán vào chỗ nhập Password trên Terminal.
-        
-
-#### 2. Lỗi "Rejected" (Như chúng ta vừa bàn ở trên)
+#### 2. Lỗi "Rejected" 
 
 Nếu bạn của bạn vừa đẩy file B lên mà bạn chưa có, Git sẽ chặn bạn push file C.
 
