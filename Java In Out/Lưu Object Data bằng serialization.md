@@ -14,7 +14,7 @@ Hãy nhìn vào đoạn code trong slide:
 
 Java
 
-```
+```java
 class Abc {
     // Hàm này nhận vào một cái máy quét (Scanner)
     // Nó KHÔNG QUAN TÂM máy quét này đang quét cái gì!
@@ -28,7 +28,7 @@ Nhờ cách viết này, hàm `read()` của bạn trở nên "bất tử" và d
 
 Java
 
-```
+```java
 Abc obj = new Abc();
 
 // 1. Dùng hàm read() để đọc từ Bàn phím

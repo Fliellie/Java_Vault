@@ -58,7 +58,8 @@ Giả sử bạn có một file lưu điểm của sinh viên (mỗi điểm là
 
 Java
 
-```
+```java
+
 import java.io.RandomAccessFile;
 import java.io.IOException;
 
