@@ -241,3 +241,64 @@ Mỗi khi bạn sửa code hoặc thêm file mới vào thư mục này, bạn c
 2. `git commit -m "mô tả thay đổi"`
     
 3. `git push`
+
+
+
+
+Để thay đổi link GitHub cũ sang link mới, bạn có hai cách: **đè lên link cũ** (nhanh nhất) hoặc **xóa hẳn đi rồi thêm lại**.
+
+Dưới đây là các lệnh bạn cần dùng trên Terminal:
+
+### Cách 1: Cập nhật trực tiếp (Khuyên dùng)
+
+Thay vì xóa rồi thêm, bạn dùng lệnh `set-url` để ghi đè link mới vào tên hiệu `origin`.
+
+Bash
+
+```bash
+git remote set-url origin https://github.com/ten-user-moi/ten-repo-moi.git
+```
+
+---
+
+### Cách 2: Xóa hẳn cái cũ rồi thêm cái mới
+
+Nếu bạn muốn làm "sạch sẽ" từng bước:
+
+**Bước 1: Xóa remote cũ (thường tên là origin)**
+
+Bash
+
+```bash
+git remote remove origin
+```
+
+**Bước 2: Thêm remote mới**
+
+Bash
+
+```bash
+git remote add origin https://github.com/ten-user-moi/ten-repo-moi.git
+```
+
+---
+
+### Bước 3: Kiểm tra lại và Đẩy code (Quan trọng)
+
+**Kiểm tra xem link đã đúng chưa:**
+
+Bash
+
+```bash
+git remote -v
+```
+
+Nó phải hiện ra link mới ở cả hai dòng `(fetch)` và `(push)`.
+
+**Đẩy code lên link mới:** Vì bạn vừa đổi "đầu dây" bên kia, lần đầu tiên đẩy code bạn nên dùng tham số `-u` để thiết lập lại nhánh theo dõi:
+
+Bash
+
+```bash
+git push -u origin main
+```
