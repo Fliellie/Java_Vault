@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.md",
+                "file": "Github/Hướng dẫn up dự án lên github.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test"
+              "title": "Hướng dẫn up dự án lên github"
             }
           }
         ],
@@ -201,6 +201,8 @@
   },
   "active": "cda30acfc1b9ef31",
   "lastOpenFiles": [
+    "Github/Hướng dẫn tách nhánh trên git.md",
+    "Github/Hướng dẫn up dự án lên github.md",
     "Test.md",
     "Yêu cầu bài tập lớn.md",
     "Nội dung chưa sắp xếp.md",
