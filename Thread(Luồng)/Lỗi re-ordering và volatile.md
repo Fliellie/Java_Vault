@@ -24,7 +24,7 @@ if (flag == true) {   // Lệnh (3)
 }
 ```
 
-- **Theo logic thông thường:** Luồng 1 gán `a = 1`, sau đó bật cờ `flag = true`. Luồng 2 thấy cờ đã bật, liền in ra giá trị của `a`. Bạn chắc mẩm màn hình sẽ in ra `1`.
+- **Theo logic thông thường:** Luồng 1 gán `a = 1`, sau đó bật cờ `flag = true`. Luồng 2 thấy cờ đã bật, liền in ra giá trị của `a`. Bạn chắc màn hình sẽ in ra `1`.
     
 - **Thực tế với Re-ordering:** Compiler hoặc CPU thấy rằng Lệnh (1) và Lệnh (2) không phụ thuộc vào nhau (thay đổi `a` không ảnh hưởng đến `flag`). Do đó, để tối ưu, nó có thể chạy Lệnh (2) _trước_ Lệnh (1).
     
