@@ -49,7 +49,7 @@ public class BillPughSingleton {
 
     private static class SingletonHelper {
         private static final BillPughSingleton INSTANCE = new BillPughSingleton();
-    }
+    }z
 
     public static BillPughSingleton getInstance() {
         return SingletonHelper.INSTANCE;
