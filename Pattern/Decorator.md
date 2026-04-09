@@ -116,7 +116,7 @@ class Pudding extends MilkTeaDecorator {
 
 Java
 
-```
+```java
 public class Main {
     public static void main(String[] args) {
         // 1. Một ly trà sữa cơ bản
