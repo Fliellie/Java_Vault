@@ -64,6 +64,9 @@ cir.setRadius(50);// ban kinh
 
 
 cir.setFill()
+// tai giao dien tu fxml
+FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/auction/client/view/login.fxml")); 
+Parent root = loader.load();
 
 
 ```

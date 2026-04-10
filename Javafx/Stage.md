@@ -45,7 +45,7 @@ Bạn không nhất thiết chỉ dùng một Stage. Bạn có thể tạo thêm
 
 Java
 
-```
+```java
 // Tạo một cửa sổ mới
 Stage secondaryStage = new Stage();
 secondaryStage.setTitle("Cửa sổ phụ");
