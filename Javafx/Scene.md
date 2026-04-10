@@ -42,6 +42,28 @@ rec.setHeight();
 // thêm chữ nhật vào scene
 root.getChildren().add(rec);
 // đổi màu
-rec.
+rec.setFill();
+// đổi độ dày viền
+rec.setStrokeWidth();
+// đổi màu viền
+rec.setStroke(color);
+// Hình đa giác
+Polygon tri=new Polygon();
+tri.getPoints().setAll(double);// vis dụ (200.0,200.0,300.0,300.0,200.0,300.0)>> tọa độ của các điểm
+tri.setFill(color);// set màu
+// thềm vào root
+root.getChildren().add(tri);
+
+
+// Hình tròn
+
+Circle cir=new Circle();
+cir.setcenterX(int);
+cir.setcenterY(int);
+cir.setRadius(50);// ban kinh
+
+
+cir.setFill()
+
 
 ```
