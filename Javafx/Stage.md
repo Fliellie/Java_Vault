@@ -1,3 +1,22 @@
+
+![[Pasted image 20260410160344.png]]
+![[Pasted image 20260410160351.png]]
+![[Pasted image 20260410160357.png]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 1. Stage là gì?
 
 Stage đại diện cho một **Window** (cửa sổ) trong hệ điều hành (Windows, macOS, hoặc Ubuntu của bạn).

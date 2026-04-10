@@ -4,7 +4,7 @@
 
 
 
-scene cũng có thể cài kich thước
+
 ```java
 
 //scene cũng có thể cài kich thước
