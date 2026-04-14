@@ -12,7 +12,7 @@ git push -u origin feature/tên nhánh
 
 ### Bước 1: Tạo và chuyển sang nhánh mới
 
-Trước khi bắt đầu code hoặc sau khi đã code xong nhưng chưa `commit`, bạn cần tạo một "con đường riêng" cho mình:
+Trước khi bắt đầu code hoặc sau khi đã code xong nhưng chưa `comJavafx(haianh)mit`, bạn cần tạo một "con đường riêng" cho mình:
 
 Bash
 
@@ -54,3 +54,71 @@ git push -u origin feature/ten-cua-ban
     
 - **Từ lần sau:** Bạn chỉ cần gõ `git push` ngắn gọn, Git sẽ tự hiểu là đẩy vào đúng cái nhánh đó.
 
+### 1. Sử dụng dòng lệnh (Terminal) - Cách chuẩn nhất
+
+Mở Terminal ngay tại thư mục dự án BTL của bạn và sử dụng lệnh `git checkout` hoặc lệnh mới hơn là `git switch`.
+
+- **Cách kiểm tra danh sách các nhánh đang có:**
+    
+    Bash
+    
+    ```
+    git branch
+    ```
+    
+    _(Nhánh bạn đang đứng sẽ có dấu sao `*` và màu xanh)._
+    
+- **Cách chuyển sang một nhánh đã tồn tại:**
+    
+    Bash
+    
+    ```
+    git switch tên-nhánh
+    # Ví dụ: git switch dev-server
+    ```
+    
+    _(Lệnh cũ là `git checkout tên-nhánh` vẫn dùng tốt)._
+    
+- **Cách tạo nhánh mới và chuyển sang luôn:**
+    
+    Bash
+    
+    ```
+    git switch -c nhánh-mới
+    # Ví dụ: git switch -c feature-login
+    ```
+    
+
+---
+
+### 2. Sử dụng VS Code (Nếu bạn dùng để code Java)
+
+Nếu bạn đang mở dự án bằng VS Code, bạn không cần gõ lệnh:
+
+1. Nhìn xuống **góc dưới cùng bên trái** của thanh trạng thái (Status Bar).
+    
+2. Bạn sẽ thấy tên nhánh hiện tại (ví dụ: `main` hoặc `master`).
+    
+3. **Click chuột trái** vào tên nhánh đó.
+    
+4. Một danh sách các nhánh sẽ hiện ra ở giữa phía trên màn hình. Bạn chỉ cần chọn nhánh muốn chuyển sang là xong.
+    
+
+---
+
+### 3. Lưu ý cực kỳ quan trọng: "Stash" trước khi Switch
+
+Đây là lỗi mà các nhóm làm BTL hay gặp phải: Bạn đang code dở ở nhánh `main`, nhưng chợt nhớ ra phải sang nhánh `dev` để sửa lỗi. Nếu bạn switch ngay, Git có thể báo lỗi vì code dở chưa được lưu (commit).
+
+- **Giải pháp 1 (Nếu code đã xong):** `git add .` và `git commit -m "tạm lưu"` trước khi switch.
+    
+- **Giải pháp 2 (Nếu code chưa xong và không muốn commit):** Dùng lệnh **Stash** để tạm cất code vào "túi":
+    
+    Bash
+    
+    ```
+    git stash        # Tạm cất code đang làm dở
+    git switch dev   # Chuyển nhánh thoải mái
+    # Sau khi quay lại nhánh cũ:
+    git stash pop    # Lấy code dở ra làm tiếp
+    ```
