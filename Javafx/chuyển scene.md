@@ -1,15 +1,5 @@
 ## 1. Phương pháp cơ bản: Thay đổi Root của Stage
 
-Đây là cách tiếp cận trực tiếp nhất: bạn lấy tham chiếu của `Stage` hiện tại và thiết lập một `Scene` mới cho nó.
-
-### Bước 1: Chuẩn bị file FXML
-
-Giả sử bạn có hai file: `View1.fxml` và `View2.fxml`.
-
-### Bước 2: Viết code chuyển Scene trong Controller
-Trong Controller của View 1, bạn tạo một phương thức để xử lý sự kiện (ví dụ: click chuột vào Button).
-
-
 ```java
 
 import javafx.fxml.FXMLLoader;
@@ -42,11 +32,6 @@ public class View1Controller {
 ---
 
 ## 2. Cách truyền dữ liệu giữa các Controller
-
-Thông thường, bạn không chỉ muốn chuyển cảnh mà còn muốn gửi dữ liệu từ màn hình A sang màn hình B. Để làm điều này, bạn không thể dùng phương thức `static` `FXMLLoader.load()`.
-
-### Code mẫu truyền dữ liệu:
-
 
 ```java
 
