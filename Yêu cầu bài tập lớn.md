@@ -16,7 +16,7 @@
 		4. giá hiện tại
 		5. thời gian bắt đầu đăng bán
 		6. thời gian kết thúc
-5. chức năng player:
+5. chức năng player: 
 	1. người chơi đấu giá
 		1. chọn phiên đang đấu giá
 		2. xem được thông tin sản phẩm
